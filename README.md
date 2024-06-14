@@ -34,3 +34,36 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### configuração do eslint
+- npx eslint --init
+- - #### respostas
+  - ? How would you like to use ESLint?
+    - ▸ To check syntax and find problems
+  - ? What type of modules does your project use?
+    - ▸ JavaScript modules (import/export)
+  - ? Which framework does your project use?
+    - ▸ React
+  - ? Does your project use TypeScript? ‣ Yes
+  - ? Where does your code run?
+    - ▸ Browser
+  ? What format do you want your config file to be in?
+    - ▸ JSON
+  - @typescript-eslint/eslint-plugin@latest eslint-plugin-react@latest @typescript-eslint/parser@latest
+    - ? Would you like to install them now? ‣  Yes
+  - ? Which package manager do you want to use?
+    - ▸ npm
+- - #### plugins
+    - ❯ npm i eslint-plugin-react-hooks -D
+
+- - #### Prettier
+    - ❯ npm install --save-dev --save-exact prettier 
+{
+  "trailingComma": "none", // ponto e vigula no final de um objeto
+  "semi": false, // ponto e vigula no final de cada linha
+  "singleQuote": true // padrão aspas simples
+}
+
+❯ npm install --save-dev eslint-config-prettier
+❯ npm install --save-dev eslint-plugin-prettier eslint-config-prettier
+❯ npm install eslint-plugin-import-helpers --save-dev  
